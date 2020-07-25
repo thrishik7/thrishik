@@ -1,0 +1,192 @@
+
+/* =============================================================================
+   My CSS
+   ========================================================================== */
+
+/* ---- base ---- */
+
+html,body{ 
+  scroll-behavior: smooth;
+  background:#111;
+  width: 100%;
+  height:100%;
+  color:#fff;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+}
+.btext{
+  color: #f9f3f4;
+  position: absolute;
+  text-align: center;
+  top:40%;
+  width:100%;
+  line-height: 0.4em;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js{
+ 
+  background-color: #0b0b0c;
+  width: 100%;
+  height:100%;
+  background-repeat: no-repeat;
+}
+
+header.masthead {
+  height: 100%;
+}
+
+div.down-arrow {
+  position: absolute;
+  right: 10px;
+  bottom: 0;
+  animation: bounce 1s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    bottom: 0;
+  }
+  25%,
+  75% {
+    bottom: 5px;
+  }
+  50% {
+    bottom: 10px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+.hm-gradient {
+  background-image: linear-gradient(
+    to top,
+    #f3e7e9 0%,
+    #e3eeff 99%,
+    #e3eeff 100%
+  );
+}
+.darken-grey-text {
+  color: #2e2e2e;
+}
+
+ol.carousel-indicators > li {
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+}
+
+
+
+#upBtn {
+  display: none;
+  position: fixed;
+  right: 10px;
+  z-index: 99;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 10px;
+  font-size: 18px;
+  background-color: transparent;
+  color: #ffffff;
+  animation: bounce 1s infinite;
+}
+
+#upBtn:hover {
+  color: #555;
+}
+#downBtn {
+  z-index: 99;
+}
+#downBtn:hover {
+  color: #555;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+footer div.container > div:nth-last-child(1) {
+  margin-bottom: 0px;
+}
+
+.footer {
+  padding: 10px;
+}
+
+.parallax {
+  background-image: url("https://wallpaperaccess.com/full/173854.jpg");
+  min-height: 200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-section1 {
+  padding: 0px;
+}
+.about-heading {
+  margin: 15px 0;
+  font-size: 40px;
+}
+
+.about-text {
+  font-size: 25px;
+}
+
+.row.text-center.split > div:nth-last-child(n) {
+  border-right: 8px solid white;
+}
+
+.row.text-center.split > div:nth-last-child(1) {
+  border-right: none;
+}
+
+.logo {
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .row.text-center.split > div:nth-last-child(n) {
+    border: none;
+  }
+}
+/* .page-section1 {
+  padding: 200px 0;
+} */
+
+.time {
+  background-color: rgba(236, 206, 58, 0.479);
+  padding: 2%;
+  height: 1000px;
+  overflow: auto;
+  border-radius: 5%;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #000000;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #000000;
+}
+
+.time-line {
+  padding-top: 20px;
+}
